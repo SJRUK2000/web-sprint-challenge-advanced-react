@@ -53,7 +53,7 @@ export default class AppClass extends React.Component{
     if(this.state.x > 1) {
       this.setState({...this.state, x: counterX, steps: stepCounter, successMessage: '', errorMessage: ''})
     } else {
-      this.setState({...this.state, successMessage: '', errorMessage: `y u go left, this isn't pokemon there aren't any creepypastas outside of the bounds!`})
+      this.setState({...this.state, successMessage: '', errorMessage: `You can't go left`})
     }
   }
 
@@ -65,7 +65,7 @@ export default class AppClass extends React.Component{
     if(this.state.x < 3) {
       this.setState({...this.state, x: counterX, steps: stepCounter, successMessage: '', errorMessage: ''})
     } else {
-      this.setState({...this.state, successMessage: '', errorMessage: `y u go right, this isn't zelda there aren't any creepypastas outside of the bounds!`})
+      this.setState({...this.state, successMessage: '', errorMessage: `You can't go right`})
     }
   }
   
@@ -77,7 +77,7 @@ export default class AppClass extends React.Component{
     if(this.state.y > 1) {
       this.setState({...this.state, y: counterY, steps: stepCounter, successMessage: '', errorMessage: ''})
     } else {
-      this.setState({...this.state, successMessage: '', errorMessage: `Why did you try to go up? The only thing up there is Lavender Town`})
+      this.setState({...this.state, successMessage: '', errorMessage: `You can't go up`})
     }
   }
 
@@ -89,7 +89,7 @@ export default class AppClass extends React.Component{
     if(this.state.y < 3) {
       this.setState({...this.state, y: counterY, steps: stepCounter, successMessage: '', errorMessage: ''})
     } else {
-      this.setState({...this.state, successMessage: '', errorMessage: `Why did you try to go down? The only thing down there is where Ben Drowned`})
+      this.setState({...this.state, successMessage: '', errorMessage: `You can't go down`})
     }
   }
 

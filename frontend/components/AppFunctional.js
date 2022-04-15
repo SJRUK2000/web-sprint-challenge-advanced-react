@@ -47,7 +47,7 @@ export default function AppFunctional(props) {
     if(state.x > 1) {
       setState({...state, x: counterX, steps: stepCounter, successMessage: '', errorMessage: ''})
     } else {
-      setState({...state, successMessage: '', errorMessage: `y u go left, this isn't pokemon there aren't any creepypastas outside of the bounds!`})
+      setState({...state, successMessage: '', errorMessage: `You can't go left`})
     }
   }
 
@@ -59,7 +59,7 @@ export default function AppFunctional(props) {
     if(state.x < 3) {
       setState({...state, x: counterX, steps: stepCounter, successMessage: '', errorMessage: ''})
     } else {
-      setState({...state, successMessage: '', errorMessage: `y u go right, this isn't zelda there aren't any creepypastas outside of the bounds!`})
+      setState({...state, successMessage: '', errorMessage: `You can't go right`})
     }
   }
   
@@ -71,7 +71,7 @@ export default function AppFunctional(props) {
     if(state.y > 1) {
       setState({...state, y: counterY, steps: stepCounter, successMessage: '', errorMessage: ''})
     } else {
-      setState({...state, successMessage: '', errorMessage: `Why did you try to go up? The only thing up there is Lavender Town`})
+      setState({...state, successMessage: '', errorMessage: `You can't go up`})
     }
   }
 
@@ -83,7 +83,7 @@ export default function AppFunctional(props) {
     if(state.y < 3) {
       setState({...state, y: counterY, steps: stepCounter, successMessage: '', errorMessage: ''})
     } else {
-      setState({...state, successMessage: '', errorMessage: `Why did you try to go down? The only thing down there is where Ben Drowned`})
+      setState({...state, successMessage: '', errorMessage: `You can't go down`})
     }
   }
 
